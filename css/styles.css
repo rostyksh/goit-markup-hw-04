@@ -5,6 +5,7 @@
   --primary-bg-color: #ffffff;
   --black-text-color: #000000;
 }
+
 .body {
   background-color:var(--primary-bg-color);
   color: var(--title-text-color);
