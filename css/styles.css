@@ -26,6 +26,7 @@ p {
 /* utils */
 img {
   display: block;
+  max-width: 100%;
 }
 .container {
   width: 1200px;
@@ -87,6 +88,24 @@ address {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
+/*  
+.header-link {
+  position: relative;
+} 
+.current::after {
+content: "";
+display: inline-block;
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 4px;
+border-radius: 2px;
+background-color: var(--accent-text-color);
+} */
+
+
 .accent {
   color: var(--accent-text-color);
 }
@@ -364,8 +383,8 @@ fill: #ffffff;
 .compani-icon-link:hover,
 .compani-icon-link:focus {
     
-    border: 1px solid #2196f3;
-    /* icon: var(--accent-text-color) */
+  border: 1px solid #2196f3;
+  icon: var(--accent-text-color);
   }
 .compani-icon-link:hover .compani-soc-icon {
   fill: var(--accent-text-color);
@@ -520,7 +539,7 @@ margin-right: 90px;
   color: var(--primary-bg-color);
   
 }
-.portfolio-btn.current {
+.portfolio-btn.current-all {
   background-color: var(--accent-text-color);
   color: var(--primary-bg-color);
   
@@ -550,6 +569,7 @@ margin-right: 90px;
   background:var(--primary-bg-color);
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
+  
 }
 .card-link:hover,
 .card-link:focus {
@@ -557,15 +577,14 @@ margin-right: 90px;
   4px 0px 4px rgba(0, 0, 0, 0.06),
   1px 0px 1px rgba(0, 0, 0, 0.12)
 }
+
 .card-link {
-  display: block;
+ display: block; 
+ /* max-width: 100%; */
 }
 .cards-text {
 padding: 20px 24px 20px 24px;
 }
 .project {
   margin-bottom: 4px;
-}
-.img {
-  max-width: 100%;
 }
