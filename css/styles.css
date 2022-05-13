@@ -384,9 +384,10 @@ fill: #ffffff;
 .compani-icon-link:focus {
     
   border: 1px solid #2196f3;
-  icon: var(--accent-text-color);
+  /* icon: var(--accent-text-color); */
   }
-.compani-icon-link:hover .compani-soc-icon {
+.compani-icon-link:hover .compani-soc-icon ,
+.compani-icon-link:focus .compani-soc-icon {
   fill: var(--accent-text-color);
 }
  .compani-icon-list {
